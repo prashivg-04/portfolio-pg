@@ -1,0 +1,42 @@
+{
+  "name": "prashiv-portfolio",
+  "version": "0.1.0",
+  "author": "Prashiv Goyal",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview",
+    "lint": "eslint src/**/*.{js,jsx}",
+    "test": "vitest run",
+    "lint:fix": "eslint src/**/*.{js,jsx} --fix"
+  },
+  "dependencies": {
+    "@iconify/react": "latest",
+    "@radix-ui/react-progress": "latest",
+    "@radix-ui/react-slot": "latest",
+    "@radix-ui/react-tooltip": "latest",
+    "brutalist-ui": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-bits": "latest",
+    "react-dom": "latest",
+    "tailwind-merge": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.4",
+    "@vitejs/plugin-react": "latest",
+    "eslint": "latest",
+    "jsdom": "^29.1.1",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}
