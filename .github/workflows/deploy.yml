@@ -73,6 +73,6 @@ jobs:
                     docker stop portfolio || true
                     docker rm portfolio || true
 
-                    docker run -d -p 80:80 --restart unless-stopped --name portfolio ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:latest
+                    docker run -d -p 3000:3000 --restart unless-stopped --name portfolio ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:latest
 
                     docker image prune -f
