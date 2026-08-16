@@ -20,7 +20,7 @@ export const projects = [
   {
     name: "Portfolio Website",
     desc: "Personal developer portfolio containerized with Docker, deployed on AWS EC2 with Nginx as reverse proxy, and automated via GitHub Actions CI/CD pipeline. Custom domain configured via Route53 with SSL via Let's Encrypt.",
-    github: "https://github.com/prashivg-04",
-    link: "",
+    github: "https://github.com/prashivg-04/portfolio-pg",
+    link: "https://prashiv-goyal.online/",
   },
 ];
