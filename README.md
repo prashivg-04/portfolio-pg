@@ -46,6 +46,12 @@ Manual trigger also available via `workflow_dispatch`.
 
 ---
 
+## Nginx Configuration
+- `nginx.conf` — Nginx config inside Docker container (serves React files on port 3000)
+- `nginx.host.conf` — Nginx config on EC2 host (reverse proxy + SSL termination)
+
+---
+
 ## Running Locally
 
 ```bash
