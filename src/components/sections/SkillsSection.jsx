@@ -13,9 +13,9 @@ export function SkillsSection() {
     <div ref={ref}>
       <SectionTitle>WHAT I DO.</SectionTitle>
       <p className="max-w-2xl font-mono text-sm uppercase leading-relaxed tracking-widest text-terminal-soft">
-        Final-year B.Tech (CSE) student building full-stack products from scratch —
-        frontend interfaces in React, server-side apps with Node.js & Express,
-        databases across PostgreSQL and MongoDB, and deploying everything on AWS with Docker and Kubernetes
+        Final-year B.Tech (CSE) student who builds things from scratch and ships them —
+        3 full-stack products live, infrastructure on AWS, containers on Kubernetes,
+        pipelines that deploy on every push. No copy-paste architecture. Just figure it out.
       </p>
       <div className="my-12 border-t border-terminal-border" />
       <TooltipProvider>

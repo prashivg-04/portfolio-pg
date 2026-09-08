@@ -48,8 +48,8 @@ export const skillGroups = [
     title: "Cloud & DevOps",
     capabilities: [
       "Provisioning AWS infrastructure (EC2, VPC, S3, RDS, IAM, Route53) using Terraform for infrastructure as code",
-      "Containerizing applications with Docker and orchestrating multi-service deployments with Kubernetes on EKS",
-      "Building CI/CD pipelines with GitHub Actions — automated testing, Docker image builds, ECR push, and EC2/EKS deployment",
+      "Containerizing applications with Docker, orchestrating multi-service deployments with Kubernetes — PostgreSQL StatefulSet, NGINX Ingress routing, persistent volumes, and ECR image pulls",
+      "Building CI/CD pipelines with GitHub Actions — automated testing, Docker image builds, ECR push, and Kubernetes rolling deployments via SSH",
     ],
     softwareSkills: [
       { skillName: "AWS", iconifyTag: "logos:aws" },
@@ -59,10 +59,10 @@ export const skillGroups = [
       { skillName: "GitHub Actions", iconifyTag: "logos:github-actions" },
       { skillName: "Nginx", iconifyTag: "logos:nginx" },
       { skillName: "Linux", iconifyTag: "logos:linux-tux" },
+      { skillName: "Jenkins", iconifyTag: "logos:jenkins" },
       { skillName: "Ansible", iconifyTag: "logos:ansible" },
-      { skillName: "Jenkins", iconifyTag: "logos:jenkins" }
     ],
-  },
+},
   {
     title: "CS Fundamentals",
     capabilities: [
