@@ -56,17 +56,17 @@ export default function App() {
       <SectionWrapper id="proficiency" num="03">
         <ProficiencySection />
       </SectionWrapper>
-      <SectionWrapper id="education" num="04">
-        <EducationSection />
-      </SectionWrapper>
-      <SectionWrapper id="experience" num="05">
+      <SectionWrapper id="experience" num="04">
         <ExperienceSection />
       </SectionWrapper>
-      <SectionWrapper id="projects" num="06">
+      <SectionWrapper id="projects" num="05">
         <ProjectsSection />
       </SectionWrapper>
-      <SectionWrapper id="achievements" num="07">
+      <SectionWrapper id="achievements" num="06">
         <AchievementsSection />
+      </SectionWrapper>
+      <SectionWrapper id="education" num="07">
+        <EducationSection />
       </SectionWrapper>
       <SectionWrapper id="contact" num="08">
         <ContactSection github={github} />
