@@ -9,34 +9,64 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-svh flex-col justify-start overflow-hidden px-6 pb-0 pt-20 md:min-h-screen md:justify-end md:px-12 md:pt-24"
+      className="relative flex min-h-[calc(100svh-4rem)] flex-col justify-center overflow-hidden px-6 py-8 md:min-h-[calc(100vh-4rem)] md:px-12 md:py-12"
     >
       <ParticlesBackground />
-      <div className="relative z-10 my-auto max-w-5xl pb-12 md:my-0 md:pb-16">
-        <h1 className="font-mono text-[clamp(64px,12vw,160px)] font-bold leading-none text-terminal-text">
-          <span className="block">{hero.greeting}</span>
-          <span className="block">
-            {"I'M "}
+      <div className="relative z-10 max-w-5xl">
+        <h1>
+          <span className="font-mono text-[clamp(24px,4vw,52px)] font-semibold leading-none text-terminal-text">
+            {hero.greeting}
+          </span>
+          <span className="font-mono text-[clamp(24px,4vw,52px)] font-semibold leading-none text-terminal-text">
+            {" I'M "}
+          </span>
+          <span className="mt-1 block font-mono text-[clamp(52px,9vw,112px)] font-bold leading-none tracking-tight text-terminal-text">
             <TerminalLine text={hero.name} cursor />
           </span>
         </h1>
-        <p className="mt-8 max-w-xl whitespace-pre-line border-l-2 border-terminal-signal pl-4 text-sm leading-relaxed text-terminal-soft">
+
+        <p className="mt-3 font-mono text-base font-medium tracking-tight text-terminal-signal sm:text-lg md:text-xl">
+          {hero.role}
+        </p>
+
+        <p className="mt-5 max-w-xl whitespace-pre-line border-l-2 border-terminal-signal pl-4 font-mono text-xs leading-relaxed text-terminal-soft sm:text-sm">
           {hero.description}
         </p>
-        <div className="mt-8 flex flex-wrap items-center gap-4">
-          <Button asChild>
-            <a href={hero.resumeLink}>[ SEE MY RESUME ]</a>
+
+        <div className="mt-5 flex items-center gap-2.5 font-mono text-xs text-terminal-soft sm:text-sm">
+          <span className="relative flex h-2 w-2 shrink-0">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-terminal-green opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-terminal-green" />
+          </span>
+          <span>{hero.availability}</span>
+        </div>
+
+        <div className="mt-7 flex flex-wrap items-center gap-4">
+          <Button asChild variant="outline">
+            <a href="#projects">[ VIEW PROJECTS ]</a>
           </Button>
-          <SocialLink 
-            href={socialLinks.github} 
-            icon="mdi:github" 
-            label="GitHub" 
-          />
-          <SocialLink
-            href={socialLinks.linkedin}
-            icon="mdi:linkedin"
-            label="LinkedIn"
-          />
+          <Button asChild variant="ghost">
+            <a href={hero.resumeLink} target="_blank" rel="noreferrer">
+              [ RESUME ]
+            </a>
+          </Button>
+          <div className="flex items-center gap-2.5">
+            <SocialLink
+              href={socialLinks.github}
+              icon="mdi:github"
+              label="GitHub"
+            />
+            <SocialLink
+              href={socialLinks.linkedin}
+              icon="mdi:linkedin"
+              label="LinkedIn"
+            />
+            <SocialLink
+              href={`mailto:${socialLinks.email}`}
+              icon="mdi:email"
+              label="Email"
+            />
+          </div>
         </div>
       </div>
     </section>

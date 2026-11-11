@@ -16,7 +16,7 @@ export default function ExperienceSection() {
           <div className="text-center">
             {/* Heading */}
             <h3 className="font-mono text-3xl sm:text-5xl font-bold text-terminal-text uppercase tracking-wider mb-3">
-              No Internship. No Problem.
+              No Internship. Plenty shipped.
             </h3>
             
             {/* Subheading */}
@@ -27,10 +27,10 @@ export default function ExperienceSection() {
             {/* Stats Grid */}
             <div className="grid gap-4 sm:gap-6 md:grid-cols-2 text-left mb-16">
               {[
-                { icon: "🚀", text: "3 products built from scratch — deployed, live, real users" },
+                { icon: "🚀", text: "3 products built from scratch — deployed, live, demo credentials included" },
                 { icon: "💻", text: "700+ LeetCode problems — daily, no days off since Jan 2026" },
-                { icon: "⚡", text: "Learned Docker, Kubernetes, AWS, Terraform — then actually used them" },
-                { icon: "🌙", text: "Most productive hours: 2am (the world gets quiet, the code gets written)" }
+                { icon: "⚡", text: "Learned Docker, Kubernetes, AWS, CI/CD — then actually used them" },
+                { icon: "🌙", text: "Available for a 6-month internship from January 2027" }
               ].map((stat, i) => (
                 <div 
                   key={i} 
@@ -57,7 +57,7 @@ export default function ExperienceSection() {
             {/* Closing Statement */}
             <div className="mb-12">
               <p className="font-mono text-xl sm:text-2xl md:text-3xl font-bold text-terminal-text uppercase leading-tight">
-                I&apos;m not looking for someone to teach me the job.
+                I Learn Fast And I Ship
               </p>
               <p className="font-mono text-xl sm:text-2xl md:text-3xl font-bold text-terminal-text uppercase leading-tight mt-2">
                 I&apos;m looking for a problem worth solving.
@@ -69,7 +69,7 @@ export default function ExperienceSection() {
               href="mailto:prashivgoyal1504@gmail.com"
               className="inline-flex items-center justify-center gap-2 border border-terminal-signal px-8 py-4 font-mono text-sm md:text-base font-bold uppercase tracking-widest text-terminal-signal transition-all hover:bg-terminal-signal hover:text-terminal-bg hover:scale-105 active:scale-95"
             >
-              Got one? &rarr; Let&apos;s talk
+              OPEN TO A 6-MONTH INTERNSHIP → LET&apos;S TALK
             </a>
           </div>
         </div>

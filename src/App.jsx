@@ -50,27 +50,35 @@ export default function App() {
     <PageShell>
       <NavBar />
       <HeroSection />
-      <SectionWrapper id="skills" num="02">
-        <SkillsSection />
-      </SectionWrapper>
-      <SectionWrapper id="proficiency" num="03">
-        <ProficiencySection />
-      </SectionWrapper>
-      <SectionWrapper id="experience" num="04">
-        <ExperienceSection />
-      </SectionWrapper>
-      <SectionWrapper id="projects" num="05">
+
+      <SectionWrapper id="projects" num="02">
         <ProjectsSection />
       </SectionWrapper>
+
+      <SectionWrapper id="experience" num="03">
+        <ExperienceSection />
+      </SectionWrapper>
+
+      <SectionWrapper id="skills" num="04">
+        <SkillsSection />
+      </SectionWrapper>
+
+      <SectionWrapper id="proficiency" num="05">
+        <ProficiencySection />
+      </SectionWrapper>
+      
       <SectionWrapper id="achievements" num="06">
         <AchievementsSection />
       </SectionWrapper>
+
       <SectionWrapper id="education" num="07">
         <EducationSection />
       </SectionWrapper>
+
       <SectionWrapper id="contact" num="08">
         <ContactSection github={github} />
       </SectionWrapper>
+      
     </PageShell>
   );
 }

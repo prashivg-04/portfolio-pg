@@ -10,7 +10,7 @@ describe('ExperienceSection', () => {
 
   it('renders the creative heading', () => {
     render(<ExperienceSection />);
-    expect(screen.getByText('No Internship. No Problem.')).toBeInTheDocument();
+    expect(screen.getByText('No Internship. Plenty shipped.')).toBeInTheDocument();
     expect(screen.getByText(/While others were interning, I was shipping./i)).toBeInTheDocument();
   });
 
@@ -19,19 +19,20 @@ describe('ExperienceSection', () => {
     expect(screen.getByText(/3 products built from scratch/i)).toBeInTheDocument();
     expect(screen.getByText(/700\+ LeetCode problems/i)).toBeInTheDocument();
     expect(screen.getByText(/Learned Docker, Kubernetes, AWS/i)).toBeInTheDocument();
+    expect(screen.getByText(/Available for a 6-month internship/i)).toBeInTheDocument();
   });
 
   it('renders the closing statements', () => {
     render(<ExperienceSection />);
     expect(screen.getByText(/The résumé says no experience./i)).toBeInTheDocument();
     expect(screen.getByText(/The GitHub says otherwise./i)).toBeInTheDocument();
-    expect(screen.getByText(/I'm not looking for someone to teach me the job./i)).toBeInTheDocument();
+    expect(screen.getByText(/I Learn Fast And I Ship/i)).toBeInTheDocument();
     expect(screen.getByText(/I'm looking for a problem worth solving./i)).toBeInTheDocument();
   });
 
   it('renders the contact button', () => {
     render(<ExperienceSection />);
-    const link = screen.getByRole('link', { name: /Got one\? → Let's talk/i });
+    const link = screen.getByRole('link', { name: /OPEN TO A 6-MONTH INTERNSHIP → LET'S TALK/i });
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute('href', 'mailto:prashivgoyal1504@gmail.com');
   });

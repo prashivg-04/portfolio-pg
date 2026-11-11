@@ -17,7 +17,7 @@ export function SectionWrapper({
       id={id}
       ref={ref}
       className={cn(
-        "relative border-t border-terminal-border px-6 py-16 md:px-12 md:py-24",
+        "relative scroll-mt-16 border-t border-terminal-border px-6 py-16 md:px-12 md:py-24",
         className,
       )}
     >

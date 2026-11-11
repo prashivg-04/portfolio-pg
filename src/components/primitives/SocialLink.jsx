@@ -16,6 +16,7 @@ export function SocialLink({
       target={href.startsWith("mailto:") || href === "#" ? undefined : "_blank"}
       rel={href.startsWith("mailto:") || href === "#" ? undefined : "noreferrer"}
       aria-label={label}
+      title={label}
       className={cn(
         showLabel
           ? "flex items-center gap-2 border border-terminal-border px-4 py-2 font-mono text-xs text-terminal-dim transition-colors duration-200 hover:border-terminal-signal hover:text-terminal-signal"

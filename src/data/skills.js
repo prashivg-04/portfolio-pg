@@ -60,7 +60,6 @@ export const skillGroups = [
       { skillName: "Nginx", iconifyTag: "logos:nginx" },
       { skillName: "Linux", iconifyTag: "logos:linux-tux" },
       { skillName: "Jenkins", iconifyTag: "logos:jenkins" },
-      { skillName: "Ansible", iconifyTag: "logos:ansible" },
     ],
 },
   {
